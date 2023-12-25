@@ -255,6 +255,7 @@ plot(plot1 <- all_trips_2019_V2 %>% ggplot(aes(x = weekday, y = average_duration
   scale_fill_manual(values = c("lightblue","purple"))+
   geom_col(position = "dodge") + ggtitle("Average trip duration based on usertypes per week"))
 ```
+![plot 1](plot1.png)
 
 ### Visualizing avg number of rides by week as per usertype
 
@@ -263,7 +264,7 @@ plot(plot2 <- all_trips_2019_V2 %>% ggplot(aes(x = weekday, y = number_of_rides,
   scale_fill_manual(values = c("lightblue","purple"))+
   geom_col(position = "dodge") + ggtitle("Average number of rides based on usertypes per week") + scale_y_continuous(labels = scales::number_format(scale = 1)))
 ```
-
+![plot 2](plot2_modified.png)
 
 ### Now that analysis and visualisations are done. It is vital we export the final `all_trips_2019_V2` data / table so our stakeholders can have it handy. To do that we need to install and load the `writexl` package
 
